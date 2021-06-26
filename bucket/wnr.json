@@ -1,0 +1,43 @@
+{
+    "version": "1.22.1",
+    "description": "A timer app with strong expansibility for computers",
+    "homepage": "https://github.com/RoderickQiu/wnr",
+    "license": "MPL-2.0",
+    "notes": "wnr config is placed at \"$env:appdata\\wnr\".",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/RoderickQiu/wnr/releases/download/v1.22.1/wnr-1.22.1-Setup-64.exe#/dl.7z",
+            "hash": "98d4bb4cd9529c7fe0962eb42c5ee11b287874b8ada5101667f335f25c9d5235"
+        },
+        "32bit": {
+            "url": "https://github.com/RoderickQiu/wnr/releases/download/v1.22.1/wnr-1.22.1-Setup-32.exe#/dl.7z",
+            "hash": "87582d62dfca53482d697f774865d42beef8f4f24639bfec71f2959a357f9b3c"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive -Path (Join-Path $dir '$PLUGINSDIR\\*.7z') -DestinationPath $dir",
+            "Remove-Item -Path (Join-Path $dir '$PLUGINSDIR') -Recurse",
+            "Remove-Item \"$dir\\Uninstall wnr.exe\""
+        ]
+    },
+    "shortcuts": [
+        [
+            "wnr.exe",
+            "wnr"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/RoderickQiu/wnr"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RoderickQiu/wnr/releases/download/v$version/wnr-$version-Setup-64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/RoderickQiu/wnr/releases/download/v$version/wnr-$version-Setup-32.exe#/dl.7z"
+            }
+        }
+    }
+}
