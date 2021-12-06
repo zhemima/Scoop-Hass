@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "url": "https://upr.unity.cn/backend/documents?type=USER_MANUAL_zh",
-        "re": "Asset Checker V(?<version>[\\d.]+)"
+        "regex": "Asset Checker V(?<version>[\\d.]+)"
     },
     "autoupdate": {
         "url": "https://unitycloud.oss-cn-beijing.aliyuncs.com/asset_check/unity-asset-checker-win-latest.zip?v=$version"
