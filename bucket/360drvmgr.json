@@ -32,7 +32,7 @@
         ]
     ],
     "checkver":{
-        "url": "http://www.carrotchou.blog/6222.html",
-        "regex": "v([\\d.]+)"
+        "url": "https://weishi.360.cn/qudongdashi/updateData.json",
+        "regex": "\"version\": \"([\\d\\.]+)\""
     }
 }
