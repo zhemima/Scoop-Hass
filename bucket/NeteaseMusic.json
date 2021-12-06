@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "url": "https://h404bi.azurewebsites.net/ncmversion.php",
-        "jp": "$.updateFiles[0].url",
+        "jsonpath": "$.updateFiles[0].url",
         "regex": "https://d1.music.126.net/dmusic/cloudmusicsetup([\\d.]+)\\.exe"
     },
     "autoupdate": {
