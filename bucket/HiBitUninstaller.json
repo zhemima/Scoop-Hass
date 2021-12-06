@@ -16,7 +16,7 @@
     "persist": "HiBitUninstaller", 
     "checkver": {
         "url": "http://www.hibitsoft.ir/Uninstaller.html",
-        "re": "HiBitUninstaller-Portable-([\\d\\.]+).zip"
+        "regex": "HiBitUninstaller-Portable-([\\d\\.]+)\.zip"
     },
     "autoupdate": {
         "url": "http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-Portable-$version.zip"
