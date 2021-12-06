@@ -25,7 +25,7 @@
         "url": "https://d1.music.126.net/dmusic/cloudmusicsetup$version.exe#/dl.7z",
         "hash": {
             "url": "https://h404bi.azurewebsites.net/ncmversion.php",
-            "jp": "$.updateFiles[0].hash"
+            "jsonpath": "$.updateFiles[0].hash"
         }
     },
     "notes": "We don't persist your CloudMusic data, they are still storaged in '%LOCALAPPDATA%\\Netease\\CloudMusic'."
