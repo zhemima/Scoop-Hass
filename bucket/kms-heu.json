@@ -16,8 +16,7 @@
         ]
     ], 
     "checkver": {
-        "url": "https://github.com/zbezj/HEU_KMS_Activator",
-        "regex": "HEU_KMS_Activator_v([\\d\\.]+).zip"
+        "github": "https://github.com/zbezj/HEU_KMS_Activator"
     },
     "autoupdate": {
         "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/$version/HEU_KMS_Activator_v$version.zip"
