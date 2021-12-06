@@ -13,6 +13,7 @@
             "HiBitUninstaller"
         ]
     ],
+    "persist": "HiBitUninstaller", 
     "checkver": {
         "url": "http://www.hibitsoft.ir/Uninstaller.html",
         "re": "HiBitUninstaller-Portable-([\\d\\.]+).zip"
