@@ -5,11 +5,11 @@ name: Pull Requests
 jobs:
   pullRequestHandler:
     name: Pull Request Validator
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
     - name: Pull Request Validation
-      uses: shovel-org/GithubActions@main
+      uses: Ash258/Scoop-GithubActions@stable
       env:
         GITH_EMAIL: zhemima@email.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
