@@ -27,7 +27,7 @@
     ],
     "checkver": {
         "url": "https://www.xmind.cn/desktop/release-notes/",
-        "regex": "<h5 class=\"text-muted\">([\\d.]+)"
+        "regex": "<h5 class=\"text-muted\">([\\d\\-.]+)"
     },
     "autoupdate": {
         "architecture": {
